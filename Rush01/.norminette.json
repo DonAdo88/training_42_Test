@@ -1,0 +1,16 @@
+{
+	"common": {
+		"indent_size": 1,
+		"max_line_length": 80,
+		"allowed_decorators": []
+	},
+	"rules": {
+		"CheckForbiddenSourceHeader": "on",
+		"CheckForbiddenHeaders": "off"
+	},
+	"header": {
+		"enabled": true,
+		"length": 24,
+		"author": "ahasanov <ahasanov@learner.42.tech>"
+	}
+}

@@ -1,0 +1,12 @@
+[
+	{
+		"key": "shift+alt+n",
+		"command": "extension.norminette",
+		"when": "editorLangId == c"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "editor.action.formatDocument",
+		"when": "editorLangId == c"
+	}
+]

@@ -1,0 +1,21 @@
+{
+	"42 School Header": {
+		"scope": "c",
+		"prefix": "42header",
+		"body": [
+			"/* ************************************************************************** */",
+			"/*                                                                            */",
+			"/*                                                       :::      ::::::::    */",
+			"/*   ${1:filename}${1/(^[^.]*)|(.*)/(?1: :)/}${1:filename}        :+:      :+:    :+:    */",
+			"/*                                                   +:+ +:+         +:+      */",
+			"/*   By: ahasanov <ahasanov@learner.42.tech>    #+#  +:+       +#+         */",
+			"/*                                               +#+#+#+#+#+   +#+            */",
+			"/*   Created: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by ahasanov     #+#    #+#              */",
+			"/*   Updated: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by ahasanov    ###   ########.fr        */",
+			"/*                                                                            */",
+			"/* ************************************************************************** */",
+			""
+		],
+		"description": "Insert 42 school header with proper alignment"
+	}
+}

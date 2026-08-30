@@ -1,0 +1,21 @@
+{
+	"[c]": {
+		"editor.defaultFormatter": "harnakam.42-norm-formatter",
+		"editor.formatOnSave": false,
+		"editor.rulers": [80]
+	},
+	"42-norm-formatter.norminette.ignoreErrors": [
+		"SPACE_REPLACE_TAB"
+	],
+	"42-norm-formatter.format.checkOnSave": false,
+	"42-norm-formatter.format.formatOnSave": false,
+	"42-norm-formatter.author": "ahasanov <ahasanov@learner.42.tech>",
+	"42-norm-formatter.header.updateOnSave": true,
+	"42-norm-formatter.header.autoFormat": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4,
+	"editor.trimAutoWhitespace": true
+}

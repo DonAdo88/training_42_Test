@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run norminette",
+			"type": "shell",
+			"command": "python3",
+			"args": ["-m", "norminette", "-R", "CheckForbiddenSourceHeader"],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			},
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^Error:\\s+([A-Z_]+)\\s+\\(line:\\s+(\\d+),\\s+col:\\s+(\\d+)\\):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"message": 4
+				}
+			}
+		}
+	]
+}

@@ -1,4 +1,17 @@
-# include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   main.c                                            :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/08/30 09:57:49 by username         #+#    #+#              */
+/*   Updated: 2026/08/30 10:29:13 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
 int	count_visible_left(int *row, int size)
 {
 	int	i;
@@ -74,37 +87,44 @@ int	match_clues(int *row, int size, int left, int right)
 	return (1);
 }
 
-
-int main(void)
+int	main(void)
 {
+	int	line[6] =
+	{
+		1, 2, 3, 4
+	};
+	int	row[4] =
+	{
+		4, 3, 2, 1
+	};
+	if (match_clues(row, 4, 1, 4))
+	{
+		write(1, "1", 1);
+		write(1, "\n", 1);
+		write(1, "Visible from left: ", 19);
+		char	left_count = count_visible_left(row, 4) + '0';
 
-    int row[4] = {4, 3, 2, 1};
+		write(1, &left_count, 1);
+		write(1, "\n", 1);
+		write(1, "Visible from right: ", 20);
+		char	right_count = count_visible_right(row, 4) + '0';
 
-    if (match_clues(row, 4, 1, 4))
-    {
-        write(1, "1", 1);
-        write(1, "\n", 1);
-        write(1, "Visible from left: ", 19);
-        char left_count = count_visible_left(row, 4) + '0';
-        write(1, &left_count, 1);
-        write(1, "\n", 1);
-        write(1, "Visible from right: ", 20);
-        char right_count = count_visible_right(row, 4) + '0';
-        write(1, &right_count, 1);
-        write(1, "\n", 1);
-    }
+		write(1, &right_count, 1);
+		write(1, "\n", 1);
+	}
+	else
+	{
+		write(1, "0", 1);
+		write(1, "\n", 1);
+		write(1, "Visible from left: ", 19);
+		char	left_count = count_visible_left(row, 4) + '0';
 
-    else
-    {
-        write(1, "0", 1);
-        write(1, "\n", 1);
-        write(1, "Visible from left: ", 19);
-        char left_count = count_visible_left(row, 4) + '0';
-        write(1, &left_count, 1);
-        write(1, "\n", 1);
-        write(1, "Visible from right: ", 20);
-        char right_count = count_visible_right(row, 4) + '0';
-        write(1, &right_count, 1);
-        write(1, "\n", 1);
-    }
+		write(1, &left_count, 1);
+		write(1, "\n", 1);
+		write(1, "Visible from right: ", 20);
+		char	right_count = count_visible_right(row, 4) + '0';
+
+		write(1, &right_count, 1);
+		write(1, "\n", 1);
+	}
 }
