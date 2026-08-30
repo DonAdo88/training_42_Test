@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   sky_don.c                                         :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*   By: ahasanov <ahasanov@learner.42.tech>       #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/08/30 09:31:37 by username         #+#    #+#              */
-/*   Updated: 2026/08/30 11:15:38 by username        ###   ########.fr        */
+/*   Created: 2026/08/30 09:31:37 by ahasanov         #+#    #+#              */
+/*   Updated: 2026/08/30 13:03:51 by ahasanov        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,6 @@ int	count_visible_right(int *row, int size)
 	}
 	return (visible);
 }
-/*int	line[6] =
-{
-match_clues(left), 3, 4, 5, 6, match_clues(right)
-};*/
 
 int	is_valid_row(int *row, int size)
 {
